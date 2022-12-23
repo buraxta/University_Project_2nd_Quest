@@ -11,7 +11,8 @@ public class HashTable {
             this.value = value;
         }
     }
-    private LinkedList<Entry>[] entries = new LinkedList[10];
+//    private LinkedList<Entry>[] entries = new LinkedList[10];
+    private LinkedList<Btree>[] entries = new LinkedList[10];
     public void put(String key, String value){
         var index = hash(key);
         if (entries[index] == null)
